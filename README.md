@@ -11,3 +11,21 @@
 * [style component, js编程式样式](https://styled-components.com/)
 
 * [floating-ui, js解决css交互问题](https://floating-ui.com/docs/platform)
+
+* [通过yalc解决开发组件需要npm link 的问题](https://juejin.cn/post/7033400734746066957)
+
+* [依赖注入一篇很好的文章](https://juejin.cn/post/7139698630167887903)
+
+* [一个比较好的的client的 event emiter的库](https://github.com/developit/mitt)
+
+* [微前端的文章，微模块（hei-micor）, 微容器(无界)](https://juejin.cn/post/7162539136577404964)
+
+* [Vue-demi](https://github.com/vueuse/vue-demi)
+
+* [hel 远程打包调用](https://tnfe.github.io/hel/docs/tutorial/helmod-pub)
+
+* [node 内存](https://blog.csdn.net/pengpengzhou/article/details/106811717)
+# 其他
+
+* [go slice 内存分配](https://mp.weixin.qq.com/s/SLouDICt3HABv_wh-sSqKw)
+* [cgo](https://juejin.cn/post/7151982900442267655)
