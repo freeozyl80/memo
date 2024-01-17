@@ -44,6 +44,7 @@ react 库 用 style-components 加速开发
 # 软件工程
 [微内核架构在前端的实现及其应用](https://juejin.cn/post/7163078031601303583) 
 [RBAC权限系统](https://zhuanlan.zhihu.com/p/258734124)
+[一个服务应该考虑的东西](https://semaphoreci.medium.com/best-practices-for-securing-node-js-applications-in-production-d24b7c4981d)
 
 # linux命令
 

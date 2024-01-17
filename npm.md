@@ -41,3 +41,19 @@ instance.doSomething();
 - [nodemaile](https://www.npmjs.com/package/nodemailer)
 
 - [concurrently 并行插件](https://www.npmjs.com/package/concurrently)
+
+- [常用node的一些相关包](https://semaphoreci.medium.com/best-practices-for-securing-node-js-applications-in-production-d24b7c4981d)
+
+- [node监控插件](https://clinicjs.org/doctor/)
+
+- [请求频次限制](https://www.npmjs.com/package/rate-limiter-flexible)
+
+- apm 库推荐
+	- [signoz](https://github.com/SigNoz/signoz/blob/develop/README.zh-cn.md)
+	- sentry
+	- promtheus
+	- relic
+	- elastic
+	- [logging, traces, metrices](https://www.atatus.com/blog/logging-traces-metrics-observability/)
+
+- 
