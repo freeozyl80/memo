@@ -97,6 +97,8 @@
 
 
 
+# 各种排序算法
+  [链接](https://zhuanlan.zhihu.com/p/515777935)
 
 
 # ci /cd 
@@ -111,3 +113,22 @@ gmp: https://learnku.com/articles/41728
 
 # 短链接服务
 # 设计模式
+
+
+# 大模型东西:
+
+## 顺序:
+prompt 工程
+基于大模型的应用
+私有知识库
+ai agent
+微调大模型
+训练大模型
+
+
+
+- Gemma
+- Llama
+- zero-shot
+
+- puting
