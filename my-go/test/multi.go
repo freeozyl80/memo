@@ -14,16 +14,17 @@ func worker(wg *sync.WaitGroup) {
 	defer wg.Done()
 
 	for i := 0; i < 100; i++ {
-		//total.Lock()
+		total.Lock()
 		total.value += i
-		// total.Unlock()
+		total.Unlock()
 	}
 }
 
 func main() {
 	var wg sync.WaitGroup
-	wg.Add(2)
+	wg.Add(3)
 
+	go worker(&wg)
 	go worker(&wg)
 	go worker(&wg)
 

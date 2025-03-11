@@ -1,3 +1,17 @@
+# golang 一些简答问题：
+- slice 是引用类型
+
+# golang 实例化：
+```golang
+t :=new(T)
+var t T
+t := &T{}
+```
+
+
+
+
+
 # 权限控制: 
 
 - rbac(role-based-access-control): casbin 库
@@ -120,3 +134,34 @@ func main() {
  }
 }
 ```
+
+## interface
+
+## mode：
+
+- 工厂模式即
+
+```golang
+type IShirt interface {
+    genTshirt() string
+}
+```
+- 适配器模式
+
+``` golang
+type windowAdaptor struct {
+    windowMachine *window
+}
+func (m *windowAdaptor) convertUSBtoLightining {
+    m.windowMachine.insertIntoUSBPort()
+}
+
+```
+- 桥接模式
+抽象不同的层
+- 装饰器模式
+不断加工
+- 享元模式
+提出公共属性，不依靠实例创建，核心还是依靠单例模式
+- 责任链模式
+很像链表
