@@ -1,5 +1,18 @@
 # react 相关指南
 
+新刷 react
+
+
+- Q: hook能不能在判断条件中执行，为什么？
+  A: 通俗讲：useState 可能被多次调用，需要 记录index, 判断条件会使得 index 不能正常递增
+     https://juejin.cn/post/7116730718356504613
+     其实原理是： 双链表
+
+- useEffect 副作用 return 销毁的时候触发
+
+
+
+
 - react 一切皆组件（函数）
 
 - 声明周期
@@ -64,6 +77,34 @@ const PriceContext = React.createContext('price')
 - react 高阶组件
 
   如果向一个高阶组件添加refe引用，那么ref 指向的是最外层容器组件实例的，而不是被包裹的组件，如果需要传递refs的话，则使用React.forwardRef，如下
+
+```javascript
+const MyInput = forwardRef(function MyInput(props, ref) {
+  const { label, ...otherProps } = props;
+  return (
+    <label>
+      {label}
+      <input {...otherProps} ref={ref} />
+    </label>
+  );
+});
+function Form() {
+  const ref = useRef(null);
+
+  function handleClick() {
+    ref.current.focus();
+  }
+
+  return (
+    <form>
+      <MyInput label="Enter your name:" ref={ref} />
+      <button type="button" onClick={handleClick}>
+        编辑
+      </button>
+    </form>
+  );
+}
+```
 
   1. 正向属性代理：
 
@@ -529,3 +570,10 @@ useState 是一个闭包，之前的函数组件也是一个必包
 ```
 
 
+# 2025 新增
+
+SWR react 的请求的 新库
+
+[shadowdom react](https://blog.innei.ren/ShadowDOM-style-isolation-and-inheritance?locale=zh) 
+
+next.js 图片优先级的实现

@@ -1,5 +1,15 @@
 # 从一次node内存泄漏，分析线上服务内存分配
 
+- node 堆内存，栈内存
+	[传送门](https://zhuanlan.zhihu.com/p/630731585)
+  * 堆内存分配指的是 Node.js 程序中使用 JavaScript 语言创建 Object、Array 等数据类型时所分配的内存空间
+	* 数组：一定大小连续的内存。
+	* 内存回收： scavenge（新） + 标记清除法（老）
+
+
+
+
+
 
 
 * POD 分配内存:  
@@ -43,3 +53,4 @@
 * heapdump 内存分析 
 
 	- (参考文章)[https://www.wenjiangs.com/doc/cb4pbwvjw]
+
